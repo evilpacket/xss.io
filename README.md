@@ -21,6 +21,9 @@ xss.io is a cross-site scripting (xss) convenience toolkit. It's purpose is to h
 1. Setup a twitter app id (for authentication) [somebody should add local auth ;)]
 1. Fight with bugs and steps I forgot to include here
 
+## Firefox Plugin
+https://addons.mozilla.org/en-US/firefox/addon/xssio-deaddrop/ 
+
 ## Architecture
 xss.io currently runs using node.js and Redis. It's goal is to be always on and fast.
 
