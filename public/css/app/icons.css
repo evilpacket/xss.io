@@ -1,0 +1,33 @@
+.icon {
+  font-family: "Pictos Custom";
+  -webkit-font-smoothing: antialiased;
+  font-size: 250px;
+  float: left;
+  margin: 0;
+  line-height: 50%;
+  position: relative;
+  top: 60px; }
+
+[data-icon]:before {
+  font-family: "Pictos Custom";
+  content: attr(data-icon);
+  -webkit-font-smoothing: antialiased;
+  margin-right: 8px;
+  font-size: 150%;
+  line-height: 10%;
+  position: relative;
+  top: 3px;
+  font-weight: normal !important; }
+
+h1[data-icon]:before {
+  font-size: 50px;
+  line-height: 10%;
+  position: relative;
+  top: 6px;
+  margin-right: 10px; }
+
+#upload[data-icon]:before {
+  font-size: 200%;
+  top: 5px;
+  font-family: "Pictos Custom";
+  -webkit-font-smoothing: antialiased; }

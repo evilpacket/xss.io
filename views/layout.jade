@@ -1,0 +1,27 @@
+!!!
+html
+  head
+    title= title
+    script(type="text/javascript", src="https://use.typekit.com/bmo7god.js")
+    script(type="text/javascript")
+      try{Typekit.load();}catch(e){}
+    link(rel='stylesheet', href='/css/reset.css')
+    link(rel='stylesheet', href='/css/styles.css')
+    link(rel='stylesheet', href='/css/pictos_custom_base64.css')
+    script(src='/js/jquery.min.js')
+    script(src='/js/csrf_token.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js')
+    script(src='/js/knockout-2.0.0.js')
+    script(src='/js/util.js')
+    script(src='/js/ga.js')
+
+  body
+    header!= partial('navigation.jade')
+
+    .container!= body
+
+    footer
+      p &copy; EvilPacket 2012 | <a href="mailto:contact@liftsecurity.io?subject=xss.io%20bug!">Report a Bug</a> | <a href="/tools">Tools</a>
+      p Sponsored by 
+        a.liftLogo(href="http://liftsecurity.io")
+          img(src="/img/lift-logo.png", alt="Lift Security")

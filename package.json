@@ -1,0 +1,29 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "2.5.2",
+    "winston": "",
+    "base62": "",
+    "bcrypt": "",
+    "socket.io": "",
+    "connect": "",
+    "backbone": "",
+    "async": "",
+    "stitch": "",
+    "thoonk": "",
+    "jade": "0.21.0",
+    "redis": "~0.7.2",
+    "hiredis": "~0.1.14",
+    "passport-twitter": "~0.1.4",
+    "underscore": "~1.3.3",
+    "node-uuid": "~1.3.3",
+    "mustache": "~0.4.0",
+    "passport": "~0.1.15",
+    "helmet": "0.0.6",
+    "connect-redis": "~1.4.0",
+    "winston-loggly": "~0.6.0",
+    "browserify": "~1.13.5"
+  }
+}

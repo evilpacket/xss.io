@@ -1,0 +1,7 @@
+node_modules/*
+dev_fixture.js
+public/js/*
+lib/client/ICanHaz.min.js
+lib/client/backbone-min.js
+lib/client/underscore-min.js
+lib/client/json2.js

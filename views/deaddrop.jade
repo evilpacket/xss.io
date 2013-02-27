@@ -1,0 +1,29 @@
+//- script(src="/js/deaddrop.js")
+h1 DeadDrop 
+section#deaddrop
+  h2 Drops with Intel #{count} / #{total}
+  table
+    thead
+      tr
+        th Location
+        th Type
+        th Events
+    tbody
+      - if (events)
+        - each event,key in events
+          tr
+            td
+              a(href="/deaddrop/#{event.drop.id}")= event.drop.location
+            td= event.drop.type
+            td= event.score
+
+  div
+    p Create a drop point with the API by making a 
+      code GET
+      |  request as shown below. Any activated drops will show up in the list above.
+    p.example https://xss.io/deaddrop/id?key=
+      span.apikey #{user.apikey}
+      | &location=
+      span.url http://example.com
+      | &type=
+      span.type 404

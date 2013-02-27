@@ -1,0 +1,23 @@
+script(src="/js/redirect.js")
+h1 Referrer Redirects
+section#redirects.clearfix
+  .redirectList.clearfix
+    h2 All Redirects
+    ul(data-bind='foreach: redirects')
+      li
+        p(data-bind='click: $root.selectSnippet')
+          em(data-bind='text: referer') 
+          span.to &raquo;
+          em(data-bind='text: url')
+        span.delete(data-bind='click: $root.deleteRedirect', data-icon="u")
+
+  .redirectEdit.clearfix(data-bind='with: selectedRedirect')
+    h2 Add a Redirect
+    form(action='/redirects', method='POST')
+      label Referrer URL
+      input(type='text', name='referer', placeholder="http://example.com...", data-bind='value: referer')
+      p.helptext Must be an exact match. Each referrer can only be used once.
+      label Redirect URL
+      input(type='text', name='url', placeholder='http://evilpacket.net', data-bind='value: url')
+      button(type='submit', data-bind='click: $root.saveRedirect') Save
+

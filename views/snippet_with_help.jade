@@ -1,0 +1,50 @@
+script(src="/js/snippets.js")
+h1 Snippets
+button(onclick="toggleHelp()") Help
+div#help
+ h2 Snippet help
+ div
+   | A snippet is a reusable building block of an exploit. It's also really just a function, some arguments and a callback. The callback is the important piece. If you forget it, any snippets following it in the exploit will not be called.
+   h3 Simple example
+   pre
+     | function (str, callback) {
+     |     alert(str);
+     |     callback();  // Do not forget this
+     | }
+
+   | You can also return data from a snippet, just include it in your callback.
+   h3 Return data example
+   pre
+     | function (url, callback) {
+     |     $.get(url, function (data) {
+     |        // Get django middlware token from loaded url
+     |        var token = $('input[name="csrfmiddlewaretoken"]', data).val();
+     |     });
+     |     callback(token);
+     | }
+
+
+section#snippets.clearfix
+  .snippetList.clearfix
+    h2 All Snippets
+    ul(data-bind='foreach: snippets')
+      li
+        span.title(data-bind='text: title, click: $root.selectSnippet')
+        span.delete(data-bind='click: $root.deleteSnippet', data-icon="u")
+    
+  .snippetEdit.clearfix
+    h2 Edit Snippet
+    div(data-bind='with: selectedSnippet')
+      form
+        input(type='hidden', data-bind='value: id')
+        label Title
+        input(data-bind='value: title')
+        label Description
+        input(data-bind='value: description')
+        label Code
+        textarea(rows='10', data-bind='value: code')
+        label Returns
+        input(data-bind='value: returns')
+        div.form-actions
+          button(data-bind='click: $root.saveSnippet, enable: title() != "" && code() != ""') Update
+          button(data-bind='click: $root.clearSnippet') Clear

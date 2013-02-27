@@ -1,0 +1,17 @@
+div
+  a#logo(href='/') xss.io
+
+  - if (user)
+    nav
+      a(href="/snippets") Snippets
+      a(href='/exploit/list') Exploit list
+      a(href='/exploit/add') Add Exploits
+      a(href="/redirects") Redirects
+      a(href="/deaddrop") DeadDrop
+
+   - if (!user)
+     h2.tagline cross-site scripting exploit platform
+     a.login(href='/auth/twitter')
+       img(src='https://si0.twimg.com/images/dev/buttons/sign-in-with-twitter-l.png')
+   - else
+     a.logout(href='/logout') Logout

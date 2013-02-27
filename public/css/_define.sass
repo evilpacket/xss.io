@@ -1,0 +1,70 @@
+$blue: #00ADEE
+$darkBlue: #0076a3
+
+=shadow($color, $x, $y, $blur)
+  -webkit-box-shadow: $color $x $y #{$blur}px
+  -moz-box-shadow: $color $x $y #{$blur}px
+  box-shadow: $color $x $y #{$blur}px
+  -ms-filter: unquote("progid:DXImageTransform.Microsoft.Shadow(Color=#{$color},Direction=135,Strength=#{$blur})")
+
+=inner_shadow($color, $x, $y, $blur)
+  box-shadow: inset $color $x $y #{$blur}px
+  -moz-box-shadow: inset $color $x $y #{$blur}px
+  -webkit-box-shadow: inset $color $x $y #{$blur}px
+
+=gradient($top, $bottom)
+  background-image: $top
+  background-image: -moz-linear-gradient(top, $top, $bottom)
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, $top),color-stop(1, $bottom))
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$top', EndColorStr='$bottom')
+
+=radial($inner, $outer)
+  background: $inner
+  background-image: -webkit-radial-gradient(center center, circle cover, $inner, $outer)
+  background-image: -moz-radial-gradient(center center, circle cover, $inner, $outer)
+  background-image: -ms-radial-gradient(center center, circle cover, $inner, $outer)
+  background-image: -o-radial-gradient(center center, circle cover, $inner, $outer)
+  background-image: radial-gradient(center center, circle cover, $inner, $outer)
+
+=roundall($round)
+  -moz-border-radius: $round
+  -webkit-border-radius: $round
+  -khtml-border-radius: $round
+  -o-border-radius: $round
+  -border-radius: $round
+  border-radius: $round
+
+=round($roundtl, $roundtr, $roundbr, $roundbl)
+  -webkit-border-top-left-radius: $roundtl
+  -webkit-border-top-right-radius: $roundtr
+  -webkit-border-bottom-left-radius: $roundbl
+  -webkit-border-bottom-right-radius: $roundbr
+  -moz-border-radius-topleft: $roundtl
+  -moz-border-radius-topright: $roundtr
+  -moz-border-radius-bottomleft: $roundbl
+  -moz-border-radius-bottomright: $roundbr
+  -border-top-left-radius: $roundtl
+  -border-top-right-radius: $roundtr
+  -border-bottom-left-radius: $roundbl
+  -border-bottom-right-radius: $roundbr
+  border-top-left-radius: $roundtl
+  border-top-right-radius: $roundtr
+  border-bottom-left-radius: $roundbl
+  border-bottom-right-radius: $roundbr    
+
+=text_shadow($color, $x, $y, $blur)
+  text-shadow: $color $x $y #{$blur}px
+  -ms-filter: unquote("progid:DXImageTransform.Microsoft.Shadow(Color=#{$color},Direction=135,Strength=#{$blur})")
+  
+=borderbox
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+=noselect
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none   

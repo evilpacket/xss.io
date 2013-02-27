@@ -1,0 +1,12 @@
+h1 DeadDrop
+h2 #{intel.location}
+section#deaddrop
+  - each piece in intel.events
+    .row
+      - eventTime = new Date(piece.time*1000)
+      - delete piece.time
+      h2 #{eventTime}
+      - each v,k in piece
+        div
+          h3= k
+          #{v}

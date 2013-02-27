@@ -1,0 +1,1200 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"row",
+				"row"
+			],
+			[
+				"after",
+				"andyet-footer-logo"
+			],
+			[
+				"active",
+				"activeContact"
+			],
+			[
+				"eee",
+				"eee"
+			],
+			[
+				"back",
+				"backChannelIcon"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"p",
+				"p: padding: T R B L"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "@import ../_define\n\n=mono\n  font-family: \"sax-mono\", \"Monaco\", monospace \n\nbody\n  background: #fff url(\"/img/tiny_grid.png\")\n  font-family: \"Helvetica Neue\", \"HelveticaNeue\", \"Helvetica-Neue\", \"HelveticaNeue-Light\", Arial, sans-serif\n  padding: 90px 0 0 0\n  height: 100%\n  color: #333\n\n//////////////////////////////////////////////////  \n\na, a:visited\n  color: #00ADEE\n  text-decoration: none\n  border-bottom: 2px solid #ccc\n\n  &:hover\n    color: #00ADEE\n    border-bottom: 2px solid #00ADEE\n\np\n  font-size: 16px\n\nh1,h2,h3,h4,h5,h6,p,li\n  margin: 0 0 10px 0\n\nh1, h2\n  +mono\n\nh1\n  border-bottom: 1px solid #eee\n  font-size: 2em\n  margin-bottom: 30px\n  text-transform: lowercase\n  color: #0076a3\n\nh2\n  color: #555\n  margin-bottom: 20px  \n\n  &.tagline\n    font-size: 1.2em\n    font-weight: normal\n    color: #fff\n    margin: 5px 0 0 140px\n\n\n//////////////////////////////////////////////////  \n\nheader\n  position: fixed\n  top: 0\n  left: 0\n  right: 0\n  width: 100%\n  height: 50px\n  background-color: #333\n  +gradient(#3f3f3f, #2a2a2a)\n  border-top: 2px solid #555\n  border-bottom: 2px solid #000\n  z-index: 100\n  +shadow(rgba(0,0,0,.3),0,5px,10px)\n\n  div\n    width: 960px\n    margin: 0 auto\n    position: relative\n    padding: 10px\n\n  a, a:visited\n    color: white\n    text-decoration: none\n    display: inline-block\n    +mono\n    +text_shadow(rgba(0,0,0,1),0,0,3)\n    font-size: 18px\n    text-transform: lowercase\n    border-bottom: 0px\n\n    &:hover\n      color: #00ADEE\n      border-bottom: 0px\n\n  #logo\n    font-size: 35px\n    font-weight: 100\n    +mono\n    position: absolute\n    top: 4px\n    left: 10px\n\n  nav\n    display: inline-block\n    position: absolute\n    top: 0px\n    left: 190px\n\n    a\n      margin-right: 30px  \n      padding-top: 10px\n      border-top: 5px solid transparent      \n\n      &:hover, &.active\n        color: #00ADEE\n        border-top: 5px solid #00ADEE\n\n  \n  .login, .logout\n    position: absolute\n    top: 15px\n    right: 10px\n\n.container\n  border-bottom: 1px solid #ddd\n  background: #fff\n  width: 920px\n  margin: 0 auto\n  +round(5px,5px,0,0)\n  padding: 20px\n  +shadow(rgba(0,0,0,.15),0,2px,8)\n  min-height: 400px\n  position: relative\n\n  div\n    z-index: 2\n    position: relative\n\n  &:after\n    content: \"\"\n    width: 100%\n    height: 130px\n    z-index: 0\n    position: absolute\n    bottom: 6px\n    left: 0\n    +gradient(#fff,#f7f7f7)\n    border-bottom: 1px solid #ddd\n    +shadow(rgba(0,0,0,.1),0,1px,0)\n\n  &:before\n    content: \"\"\n    width: 954px\n    height: 3px\n    z-index: 0\n    position: absolute\n    bottom: 3px\n    left: 2px\n    background-color: transparent\n    border:\n      right: 1px solid #eee\n      left: 1px solid #f0f0f0\n      bottom: 1px solid #eee\n    +shadow(rgba(0,0,0,.2),0,1px,0)\n\n\nfooter\n  width: 960px\n  margin: 30px auto\n\n  p\n    width: 480px\n    font-size: 13px\n    float: left\n    color: #777\n    &:last-child\n      text-align: right\n      margin-right: 0\n\n.liftLogo\n  width: 42px\n  height: 20px\n  display: block\n  float: right\n  position: relative\n  top: -2px\n  margin-left: 6px\n  border-bottom: 0px !important\n\n//////////////////////////////////////////////////  \n\n#home \n\n  h1\n    font-family: \"daniel\", \"Helvetica Neue\", \"HelveticaNeue\", \"Helvetica-Neue\", \"HelveticaNeue-Light\", Arial, sans-serif\n    float: left\n    font-size: 3.5em\n    width: 400px\n    font-weight: 700\n    line-height: 160%\n    text-transform: inherit\n    margin-top: 30px\n    border-bottom: none\n\n    em\n      font-style: normal\n      font-weight: 900\n      color: #000\n\n  div\n    float: left\n    width: 460px\n    margin: 30px 0 30px 60px\n\n  h3\n    font-size: 1.5em\n\n  ul\n    padding-left: 40px\n\n  li\n  \n\n  h2\n    clear: both\n    border-top: 1px solid #eee\n    padding-top: 30px\n    text-align: center\n\n//////////////////////////////////////////////////  \n\n.snippetList\n  float: left\n  width: 430px\n  margin-right: 40px\n\n  ul\n    padding: 0\n\n  li\n    display: block\n    cursor: pointer\n    padding: 5px 0 5px 10px\n    position: relative\n    margin-bottom: 0\n    border-bottom: 1px solid #ccc\n    border-top: 1px solid #fff\n    border-right: 1px solid #ddd\n    border-left: 1px solid #ddd\n\n    &:first-child\n      border-top: 1px solid #ccc\n\n    &:nth-of-type(even)\n      background-color: #fafafa\n    &:nth-of-type(odd)\n      background-color: #f0f0f0\n\n    &:hover\n      display: block\n      +gradient(#fff,#eee)\n      border-bottom: 1px solid #aaa\n\n      span.title \n        display: block\n        font-weight: bold\n\n      span:before\n        display: inline-block\n\n    span:before\n      display: none\n      position: absolute\n      top: 17px\n      right: 0px\n    span:hover:before\n      color: #aa0000 !important\n\n.snippetEdit, .exploitEdit\n  float: left\n  width: 450px\n\n  form\n\n  label\n    position: absolute\n    left: 0\n    padding-top: 5px\n    font-size: 14px\n    color: #555\n    font-weight: bold\n    width: 90px\n    text-align: right\n\n  input, textarea, button\n    display: block\n    margin: 20px 0 20px 100px\n\n  input, textarea\n    +roundall(3px)\n    border:\n      top: 1px solid #ccc\n      bottom: 1px solid #fff\n      left: 1px solid #ddd\n      right: 1px solid #ddd\n    padding: 5px\n    background-color: #f7f7f7\n    width: 330px\n\n  textarea\n    height: 200px\n\n//////////////////////////////////////////////////  \n\n\n//////////////////////////////////////////////////  \n\n\n//////////////////////////////////////////////////  \n\n#exploit_manager_left\n  border: solid\n  margin-right: 10px\n\n.snippet\n  margin: 5px\n  border: solid\n  margin-right: 10px\n\n.snippet p\n  margin: 0px\n  padding: 0px\n\n.snippet .options\n  color: #ccc\n\n#exploit_manager_right\n  border: solid\n\n#exploit_manager_right .snippet .title\n  background-color: #eee\n\n#exploit_manager_right .delete\n  float: right\n  margin-right: 10px\n  color: red\n  text-decoration:none\n\n#droppable\n  height: 100px\n  border: solid\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+			"file": "/Users/adam/Dropbox/Dev/Code/xss.io/public/css/app/layout.sass",
+			"file_size": 5855,
+			"file_write_time": 1342513334000000,
+			"settings":
+			{
+				"buffer_size": 5855,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "redirects.jade",
+			"settings":
+			{
+				"buffer_size": 841,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "exploit_add.jade",
+			"settings":
+			{
+				"buffer_size": 760,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "snippet.jade",
+			"settings":
+			{
+				"buffer_size": 791,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "exploit_list.jade",
+			"settings":
+			{
+				"buffer_size": 512,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "layout.jade",
+			"settings":
+			{
+				"buffer_size": 822,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/adam/Dropbox/Dev/Code/xss.io/public/css/icons.sass",
+			"settings":
+			{
+				"buffer_size": 647,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.jade",
+			"settings":
+			{
+				"buffer_size": 686,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "navigation.jade",
+			"settings":
+			{
+				"buffer_size": 484,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/adam/Dropbox/Dev/Code/xss.io/config.js-baldwin",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/public/css/reset.css",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/views/layout.jade",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/views/navigation.jade",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/public/js/exploits.js",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/public/css/gradient.scss",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/public/css/_define.sass",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/public/js/snippets.js",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/public/img/tiny_grid.png",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/package.json",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/views/dashboard.jade",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/views/deaddrop.jade",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/views/deaddrop_intel.jade",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/views/redirects.jade",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/views/content.jade",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/views/snippet.jade",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/public/css/exploit_manager.css",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/public/css/styles.sass",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/public/css/app/icons.sass",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/views/exploit_list.jade",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/views/index.jade",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/views/exploit_add.jade",
+		"/Users/adam/Dropbox/Dev/Code/xss.io/public/stylesheets/style.css",
+		"/Users/Adam/spectrum/www/css/style.sass",
+		"/Users/Adam/spectrum/www/css/_define.sass",
+		"/Users/Adam/spectrum/www/index.html",
+		"/Users/Adam/spectrum/app.js",
+		"/Users/Adam/spectrum/www/css/app/uikit.sass, in `shadow'",
+		"/Users/Adam/spectrum/www/css/app/normalize.sass",
+		"/Users/Adam/spectrum/www/css/_define.css",
+		"/Users/Adam/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/Adam/spectrum/www/css/app/icons.sass",
+		"/Users/Adam/spectrum/.jshintignore",
+		"/Users/Adam/spectrum/postageApp.js",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/clientapp/fixtures/files.js",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/clientapp/views/file.js",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/views/static/index.jade",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/views/static/app.jade",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/app.js",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/.jshintrc",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/js/scrollability.js",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/clientapp/pages/contactForm.js",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/clientapp/routers/main.js",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/css/app/icons.sass",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/css/app/upload.sass",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/css/app/uikit.sass",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/css/app/content.sass, in `border-box'",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/css/_define.sass",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/css/_define.css",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/css/pub.sass",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/views/static/contacts.jade",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/css/pub.css",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/clientapp/views/fileType.js",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/views/static/static-files.jade",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/css/app/mobile.sass",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/clientapp/pages/files.js",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/css/style.sass",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/clientapp/models/files.js",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/css/app/files.sass",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/css/reset.css",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/css/pub/pub.sass, in `shadow'",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/css/pub/pub.sass",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/css/reset.sass",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/css/uikit.css",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/public/css/uikit.sass",
+		"/Users/Adam/Dropbox/Dev/Code/linkinlock/views/layout.jade",
+		"/Users/Adam/Dropbox/Dev/Code/spectrum/views/static/index.jade",
+		"/Users/Adam/Dropbox/Dev/Code/cardbox/public/js/modernizr-2.5.3.min.js",
+		"/Users/Adam/Dropbox/Dev/Code/cardbox/dev_config.js",
+		"/Users/Adam/Dropbox/Dev/Code/cardbox/views/static/docs.jade",
+		"/Users/Adam/Dropbox/Dev/Code/cardbox/.gitignore",
+		"/Users/Adam/Dropbox/Dev/Code/cardbox/public/js/models.js",
+		"/Users/Adam/Dropbox/Dev/Code/cardbox/clientapp/models/contacts.js",
+		"/Users/Adam/Dropbox/Dev/Code/cardbox/views/layout.jade",
+		"/Users/Adam/Dropbox/Dev/Code/cardbox/public/js/libs/backbone.js",
+		"/Users/Adam/Dropbox/Dev/Code/cardbox/app.js",
+		"/Users/Adam/Dropbox/Dev/Code/cardbox/test.js",
+		"/Users/Adam/Desktop/files.jade",
+		"/Users/Adam/Desktop/contacts.jade",
+		"/Users/Adam/Desktop/messages.jade",
+		"/Users/Adam/Dropbox/Dev/Code/talkbox/public/css/style.sass",
+		"/Users/Adam/Dropbox/Dev/Code/cardbox/views/static/index.jade",
+		"/Users/Adam/Dropbox/Dev/Code/cardbox/views/upload-direct.jade",
+		"/Users/Adam/Dropbox/Dev/Code/cardbox/ATTLocker.js",
+		"/Users/Adam/Dropbox/Dev/Code/cardbox/public/css/pictos_custom_base64.css",
+		"/Users/Adam/Dropbox/Dev/Code/cardbox/public/css/pictos_custom.ttf",
+		"/Users/Adam/Dropbox/Dev/Code/lockbox/views/index.jade",
+		"/Users/Adam/Dropbox/Dev/Code/lockbox/views/connect.jade",
+		"/Users/Adam/Dropbox/Dev/Code/lockbox/public/css/style.sass",
+		"/Users/Adam/Dropbox/Dev/Code/lockbox/views/files.jade",
+		"/Users/Adam/Dropbox/Dev/Code/lockbox/views/success.jade",
+		"/Users/Adam/Dropbox/Dev/Code/lockbox/views/docs.jade",
+		"/Users/Adam/Dropbox/Dev/Code/lockbox/public/js/libs/prettyprint.js",
+		"/Users/Adam/Dropbox/Dev/Code/lockbox/lockerObjects.js",
+		"/Users/Adam/Dropbox/Dev/Code/lockbox/public/css/reset.css",
+		"/Users/Adam/Dropbox/Dev/Code/lockbox/public/js/libs/jquery-1.7.1.min.js",
+		"/Users/Adam/Dropbox/Dev/Code/lockbox/views/layout.jade",
+		"/Users/Adam/Dropbox/Dev/Code/lockbox/public/css/prettyprint.css",
+		"/Users/Adam/Dropbox/Dev/Code/lockbox/package.json",
+		"/Users/Adam/Dropbox/Dev/Code/lockbox/app.js",
+		"/Users/Adam/Dropbox/Dev/Code/lockbox/views/upload.jade",
+		"/Users/Adam/Library/Containers/com.apple.Preview/Data/Desktop/photo 2.JPG",
+		"/Users/Adam/Code/petritoli/petritoli.json",
+		"/Users/Adam/Code/petritoli/index.html",
+		"/Users/Adam/Code/petritoli/lib/app.js",
+		"/Users/Adam/Code/couch/memories.json",
+		"/Users/Adam/Code/couch/mydesign.json",
+		"/Users/Adam/Code/petritoli/kanso.json",
+		"/Users/Adam/Code/petritoli/lib:app.js",
+		"/Users/Adam/Code/petritoli/autolint.js",
+		"/Users/Adam/Code/petritoli/lib/greet.js",
+		"/Users/Adam/Code/petritoli/say.js",
+		"/Users/Adam/Code/petritoli/petritoli.watchr",
+		"/Users/Adam/Code/petritoli/kanso.watchr",
+		"/Users/Adam/Code/pilatus/index.html",
+		"/Users/Adam/Code/pilatus/kanso.json",
+		"/Users/Adam/Code/andbang/public/css/app/team.sass",
+		"/Users/Adam/Code/andbang/public/css/app/messages.sass",
+		"/Users/Adam/Code/andbang/clientTemplates/header.member.html",
+		"/Users/Adam/Code/andbang/clientTemplates/shippedTask.html",
+		"/Users/Adam/Code/andbang/clientTemplates/taskDetail.html",
+		"/Users/Adam/Code/andbang/clientTemplates/teamNav.html",
+		"/Users/Adam/Code/andbang/public/css/app/omnibox.sass",
+		"/Users/Adam/Code/andbang/clientTemplates/teamDashboardSubPage.html",
+		"/Users/Adam/Code/andbang/clientTemplates/growlMessage.html",
+		"/Users/Adam/Code/andbang/clientTemplates/app.html",
+		"/Users/Adam/Code/andbang/clientTemplates/task.html",
+		"/Users/Adam/Code/andbang/public/css/app/twipsy.sass"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"clearfix",
+			"drag",
+			"drop",
+			"select",
+			"drag",
+			"back",
+			"container",
+			"z-ind",
+			"addFile",
+			"messagelist",
+			"contact",
+			"search",
+			"search conta",
+			"search",
+			"contactImage",
+			"page",
+			"class=\"page",
+			"contact",
+			"back to",
+			"contact",
+			"logo",
+			"top",
+			"dialer",
+			"addcontact",
+			"header",
+			"heaer",
+			"selectview",
+			"Messages",
+			"startDis",
+			"messagelist",
+			"static",
+			"message",
+			"vid",
+			"messages",
+			"maincontent",
+			"maincontan",
+			"p.m.",
+			"time",
+			"message",
+			"proxy",
+			"time",
+			"img",
+			"contact",
+			"img",
+			"jq",
+			"css",
+			"messages",
+			"header",
+			"search",
+			"header",
+			"back",
+			"form",
+			"search",
+			"contact",
+			"contentThings",
+			"300px",
+			"0px",
+			"300",
+			"file",
+			"left",
+			"300px",
+			"shadow",
+			"300px",
+			"pages",
+			"aside",
+			"header",
+			"paper",
+			"active",
+			"hover",
+			"aside",
+			"jquery",
+			"aside",
+			"header",
+			"backTo",
+			"after",
+			"backTo",
+			"button",
+			"doStuff",
+			"drawerOpen",
+			"toggle",
+			"after",
+			"search",
+			"addFile",
+			"delete",
+			"aside",
+			"box-si",
+			"logo",
+			"backTo",
+			"backtTo",
+			"back",
+			"logo",
+			"delete",
+			"button",
+			"header",
+			"contact",
+			"file",
+			"contact",
+			"linkinlock",
+			"opacity",
+			"button",
+			"delete",
+			"button",
+			"header",
+			"delete",
+			"edit",
+			"dostuff",
+			"gradient",
+			"header",
+			"files",
+			"logo",
+			"top",
+			"header",
+			"page",
+			"after",
+			"input",
+			"header",
+			"aside",
+			"input",
+			"search",
+			"header",
+			"sharing",
+			"button",
+			"actions",
+			"button",
+			"edit",
+			"file",
+			"name",
+			"dialog"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".contentThings",
+			"",
+			"talk"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/adam/Dropbox/Dev/Code/xss.io/public/css/app/layout.sass",
+					"settings":
+					{
+						"buffer_size": 5855,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5820,
+								5820
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 883.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "redirects.jade",
+					"settings":
+					{
+						"buffer_size": 841,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								840,
+								841
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "exploit_add.jade",
+					"settings":
+					{
+						"buffer_size": 760,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								323,
+								323
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "snippet.jade",
+					"settings":
+					{
+						"buffer_size": 791,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "exploit_list.jade",
+					"settings":
+					{
+						"buffer_size": 512,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								512,
+								512
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "layout.jade",
+					"settings":
+					{
+						"buffer_size": 822,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								575,
+								538
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/adam/Dropbox/Dev/Code/xss.io/public/css/icons.sass",
+					"settings":
+					{
+						"buffer_size": 647,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								647,
+								647
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "index.jade",
+					"settings":
+					{
+						"buffer_size": 686,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								686,
+								686
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "navigation.jade",
+					"settings":
+					{
+						"buffer_size": 484,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"dialer",
+				"css/app/dialer.sass"
+			],
+			[
+				"styles",
+				"css/style.sass"
+			],
+			[
+				"contacs",
+				"css/app/contacts.sass"
+			],
+			[
+				"_de",
+				"css/_define.sass"
+			],
+			[
+				"define",
+				"css/_define.sass"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"index.",
+				"index.html"
+			],
+			[
+				"app.js",
+				"/Users/Adam/spectrum/app.js"
+			],
+			[
+				"buttons",
+				"css/app/buttonsforms.sass"
+			],
+			[
+				"_def",
+				"css/_define.sass"
+			],
+			[
+				"icons",
+				"public/css/app/icons.sass"
+			],
+			[
+				"main.js",
+				"clientapp/views/main.js"
+			],
+			[
+				"define.sass",
+				"public/css/_define.sass"
+			],
+			[
+				"clientapp/views/file.js",
+				"clientapp/views/file.js"
+			],
+			[
+				"clientapp/views/file",
+				"clientapp/views/fileType.js"
+			],
+			[
+				"files",
+				"views/static/static-files.jade"
+			],
+			[
+				"files.js",
+				"clientapp/pages/files.js"
+			],
+			[
+				"files.",
+				"clientapp/models/files.js"
+			],
+			[
+				"twips",
+				"public/css/app/twipsy.sass"
+			],
+			[
+				"header",
+				"clientTemplates/header.member.html"
+			],
+			[
+				"header.h",
+				"clientTemplates/header.member.html"
+			],
+			[
+				"app.htl",
+				"clientTemplates/app.html"
+			],
+			[
+				"omni",
+				"public/tests/omnibox.html"
+			],
+			[
+				"omnib",
+				"public/css/app/omnibox.sass"
+			],
+			[
+				"memberpc",
+				"clientTemplates/memberPic.html"
+			],
+			[
+				"growl",
+				"clientTemplates/growlMessage.html"
+			],
+			[
+				"mixins",
+				"public/css/_mixins.sass"
+			],
+			[
+				"notifi",
+				"clientTemplates/notifications.html"
+			],
+			[
+				"ui",
+				"public/css/app/ui.css"
+			],
+			[
+				"notif",
+				"public/css/app/notifications.sass"
+			],
+			[
+				"notifcations",
+				"public/css/app/notifications.sass"
+			],
+			[
+				"task.html",
+				"clientTemplates/task.html"
+			],
+			[
+				"nav",
+				"clientTemplates/teamNav.html"
+			],
+			[
+				"mixin",
+				"public/css/_mixins.sass"
+			],
+			[
+				"team.sass",
+				"public/css/app/team.sass"
+			],
+			[
+				"omnibox",
+				"public/css/app/omnibox.sass"
+			],
+			[
+				"message",
+				"public/css/app/messages.sass"
+			],
+			[
+				"shipped",
+				"clientTemplates/shippedTask.html"
+			],
+			[
+				"taskde",
+				"clientTemplates/taskDetail.html"
+			],
+			[
+				"messages.sass",
+				"public/css/app/messages.sass"
+			],
+			[
+				"member",
+				"clientTemplates/member.html"
+			],
+			[
+				"detail",
+				"clientTemplates/taskDetail.html"
+			],
+			[
+				"taskdetail",
+				"clientapp/pages/taskDetail.js"
+			],
+			[
+				"team",
+				"clientTemplates/team.html"
+			],
+			[
+				"list",
+				"clientTemplates/listDetail.html"
+			],
+			[
+				"listit",
+				"clientTemplates/listItem.html"
+			],
+			[
+				"lists.",
+				"clientTemplates/lists.html"
+			],
+			[
+				"starr",
+				"clientTemplates/starred.html"
+			],
+			[
+				"icons.sass",
+				"public/css/app/icons.sass"
+			],
+			[
+				"app.html",
+				"clientTemplates/app.html"
+			],
+			[
+				"tas",
+				"clientTemplates/task.html"
+			],
+			[
+				"teamnav",
+				"clientTemplates/teamNav.html"
+			],
+			[
+				"omnibox.sass",
+				"public/css/app/omnibox.sass"
+			],
+			[
+				"app.sass",
+				"public/css/app/app.sass"
+			],
+			[
+				"later",
+				"clientTemplates/laterBox.html"
+			],
+			[
+				"latersass",
+				"public/css/app/laterDrawer.sass"
+			],
+			[
+				"membernav",
+				"clientapp/views/memberNav.js"
+			],
+			[
+				"navback",
+				"clientTemplates/navItemBackchannel.html"
+			],
+			[
+				"variab",
+				"public/css/_variables.sass"
+			],
+			[
+				"navitme",
+				"clientTemplates/navItemMember.html"
+			],
+			[
+				"navhtml",
+				"clientTemplates/navItemStarred.html"
+			],
+			[
+				"teamhtml",
+				"clientTemplates/teamMembership.html"
+			],
+			[
+				"",
+				"develop_fixture.js"
+			],
+			[
+				"mixins.",
+				"public/css/_mixins.sass"
+			],
+			[
+				"activ",
+				"public/css/app/activitylog.sass"
+			],
+			[
+				"teammember",
+				"clientTemplates/navItemMember.html"
+			],
+			[
+				"dashboard",
+				"clientTemplates/teamDashboardSubPage.html"
+			],
+			[
+				"app",
+				"clientTemplates/app.html"
+			],
+			[
+				"taskhtml",
+				"clientTemplates/task.html"
+			],
+			[
+				"variabl",
+				"public/css/_variables.sass"
+			],
+			[
+				"varia",
+				"public/css/bootstrap/variables.sass"
+			],
+			[
+				"message.html",
+				"clientTemplates/chatMessage.html"
+			],
+			[
+				"task",
+				"clientTemplates/task.html"
+			],
+			[
+				"itemhtml",
+				"clientTemplates/listItem.html"
+			],
+			[
+				"item",
+				"clientTemplates/teamListItem.html"
+			],
+			[
+				"detailhtml",
+				"clientTemplates/taskDetail.html"
+			],
+			[
+				"listhtml",
+				"clientTemplates/teamListItem.html"
+			],
+			[
+				"listde",
+				"clientTemplates/listDetail.html"
+			],
+			[
+				"icons.",
+				"public/css/app/icons.sass"
+			],
+			[
+				"_mi",
+				"public/css/_mixins.sass"
+			],
+			[
+				"twipsy",
+				"public/css/app/twipsy.sass"
+			],
+			[
+				"mixins.sass",
+				"public/css/_mixins.sass"
+			],
+			[
+				"tasks.sass",
+				"public/css/app/tasks.sass"
+			],
+			[
+				"team.html",
+				"clientTemplates/team.html"
+			],
+			[
+				"dashb",
+				"clientTemplates/teamDashboardSubPage.html"
+			],
+			[
+				"pages",
+				"public/css/app/pages.sass"
+			],
+			[
+				"noti",
+				"clientTemplates/notifications.html"
+			],
+			[
+				"listitem",
+				"clientTemplates/listItem.html"
+			],
+			[
+				"page.sass",
+				"public/css/app/pages.sass"
+			],
+			[
+				"memberpic",
+				"clientTemplates/memberPic.html"
+			],
+			[
+				"lists.sass",
+				"public/css/app/tasks.sass"
+			],
+			[
+				"backchannel",
+				"clientTemplates/navItemBackchannel.html"
+			],
+			[
+				"backcha",
+				"clientTemplates/backchannel.html"
+			],
+			[
+				"taskdeta",
+				"clientTemplates/taskDetail.html"
+			],
+			[
+				"notifcations.sass",
+				"public/css/app/notifications.sass"
+			],
+			[
+				"shipp",
+				"clientTemplates/shippedTask.html"
+			],
+			[
+				"task.js",
+				"clientapp/models/task.js"
+			],
+			[
+				"tasks.js",
+				"lib_server/tasks.js"
+			],
+			[
+				"ship",
+				"clientTemplates/shippedTask.html"
+			],
+			[
+				"message.js",
+				"clientapp/models/message.js"
+			],
+			[
+				"messages",
+				"public/css/app/messages.sass"
+			],
+			[
+				"chat",
+				"clientTemplates/chatMessage.html"
+			],
+			[
+				"lib_shared/date.js",
+				"lib_shared/date.js"
+			],
+			[
+				"taskdetail.js",
+				"clientapp/pages/taskDetail.js"
+			],
+			[
+				"prof",
+				"clientTemplates/profile.html"
+			],
+			[
+				"profile",
+				"clientTemplates/profile.html"
+			],
+			[
+				"tasks",
+				"public/css/app/tasks.sass"
+			],
+			[
+				"listdeta",
+				"clientTemplates/listDetail.html"
+			],
+			[
+				"clientte",
+				"clientTemplates/app.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 180.0,
+	"status_bar_visible": false
+}

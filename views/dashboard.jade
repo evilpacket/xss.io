@@ -1,0 +1,16 @@
+script(src="/socket.io/socket.io.js")
+script(src="/js/dashboard.js")
+section#dashboard
+  .row
+    h2 Nodes
+    button(data-bind='click: alertNodes') Alert
+    div
+      div(data-bind='foreach: nodes')
+        .row
+           div(data-bind='text: $data.ip, click: $root.selectNode')
+        -//    div(class='span4',data-bind='text: title, click: $root.selectSnippet')
+        -//    div(class='span1',data-bind='click: $root.deleteSnippet')
+        -//        i(class='icon-remove-sign')
+    
+  div(class='span7 well',data-bind='with: selectedNode')
+    h3(data-bind='text: $data.data().referer')
