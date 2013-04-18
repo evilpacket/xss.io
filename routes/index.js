@@ -133,6 +133,22 @@ exports.createDeadDrop = function (req, res) {
     }
 };
 
+exports.deleteDeadDrop = function (req, res) {
+    if (req.params.id) {
+        client.eval(scripts.deleteDeadDrop, 0, JSON.stringify(req.user), req.params.id, function (err, reply) {
+            console.log(reply);
+            var args = _.toArray(reply);
+            if (args[0]) {
+                res.send(args[0], args[2]);
+            } else {
+                res.send(args[1], args[2]);
+            } 
+        });
+    } else {
+        res.send('ahhhh no', 418); 
+    }
+};
+
 exports.getDeadDropLocations = function (req, res) {
     client.eval(scripts.getDeadDrops, 0, JSON.stringify(req.user), function (err, reply) {
         var args = _.toArray(reply);
