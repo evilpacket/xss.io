@@ -1,4 +1,4 @@
-//- script(src="/js/deaddrop.js")
+script(src="/js/deaddrop.js")
 h1 DeadDrop 
 section#deaddrop
   h2 Drops with Intel #{count} / #{total}
@@ -8,6 +8,7 @@ section#deaddrop
         th Location
         th Type
         th Events
+        th Actions
     tbody
       - if (events)
         - each event,key in events
@@ -16,6 +17,8 @@ section#deaddrop
               a(href="/deaddrop/#{event.drop.id}")= event.drop.location
             td= event.drop.type
             td= event.score
+            td
+              button(onclick="deleteDeadDrop(#{event.drop.id})") Delete
 
   div
     p Create a drop point with the API by making a 
