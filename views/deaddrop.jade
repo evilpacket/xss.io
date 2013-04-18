@@ -18,7 +18,7 @@ section#deaddrop
             td= event.drop.type
             td= event.score
             td
-              button(onclick="deleteDeadDrop(#{event.drop.id})") Delete
+              button(onclick="deleteDeadDrop('#{event.drop.id}')") Delete
 
   div
     p Create a drop point with the API by making a 
